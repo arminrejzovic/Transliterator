@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="Style.css" type="text/css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css" rel="stylesheet">
+    <link rel="icon" href="./pics/icon.png">
+    <title>Latinica <-> Arebica</title>
+</head>
+<body>
+
+<header>
+    <h1>Prevoditelj Latinica-Arebica</h1>
+    <h1>پرەوۉديتەڵ لآتينيڄآ - آرەبيڄآ</h1>
+</header>
+
+
+
+<div id="container">
+
+    <h3 id="title1">Latinica</h3>
+    <textarea id="firstlangText" placeholder="Enter Text Here"></textarea>
+
+    <div id="buttons">
+        <img id="switch" alt="switch" src="pics/switch.png" onclick="switchLanguages()">
+        <span>Zamijeni pisma</span>
+        <img id="clear" alt="clear" src="pics/clear.png" onclick="clearAll()">
+        <span>Obriši sve</span>
+        <img id="clipboard" alt="clipboard" src="pics/clipboard.png" onclick="copyToClipboard()">
+        <span>Kopiraj prijevod u Clipboard</span>
+    </div>
+
+    <h3 id="title2">Arebica</h3>
+    <p id="secondlangText"></p>
+
+    <div id="fontButtons">
+        <img id="fontup" alt="fontup" src="pics/fontup.png" onclick="fontUp()">
+        <span>Povećaj veličinu teksta</span>
+        <img id="fontdown" alt="fontdown" src="pics/fontdown.png" onclick="fontDown()">
+        <span>Smanji veličinu teksta</span>
+    </div>
+
+
+    <div id="about">
+        <img id="aboutIMG" alt="about" src="pics/about.png">
+        <span id="aboutTitle">O pismu</span>
+        <p><a href="https://bs.wikipedia.org/wiki/Arebica">Arebica</a> je bosanska varijanta perzijsko-arapskog pisma koja se koristila od 15. do 19. vijeka. Nastala je ulaskom
+        Bosne u osmansko-islamski civilizacijski krug i često se vezuje za Alhamijado literaturu. Osim u literaturi,
+        koristila se i u vjerskim školama i administraciji. Poznata je i kao <i>matufovača, matufovica</i> i <i>mektebica.</i></p>
+        <p>Arebica se razvila od arapskog pisma, uz dodatak harfova c, lj i nj, koji nisu bili prisutni u arapskom, perzijskom
+        i turskom jeziku. Za razliku od izvornog arapskog, arebica sadrži pune harfove za sve samoglasnike. Vremenom se
+        ovo pismo mijenjalo, a konačnu verziju je sklopio <span>Džemaludin ef. Čaušević</span> krajem 19. stoljeća.</p>
+        <p>Od 1878. godine i dolaska Austro-Ugarske, glavno pismo u Bosni i Hercegovini je postala latinica, ali se
+        arebica održala kod Bošnjaka. Bilo je pokušaja da arebica postane treće zvanično pismo (uz latinicu i ćirilicu,
+        ali su oni bili bezuspješni. Štampanje knjiga na arebici je prestalo 1941. Međutim, 64 godine kasnije, objavljen
+        je strip <span>Hadži Ševko i Hadži Mefko</span> (autori Amir Al-Zubi i Meliha Čičak-Al-Zubi), koji je pisan arebicom.
+        2013. godine je objavljeno djelo  <span>Epohe fonetske misli kod Arapa i arebica</span> (autora Aldin ef. Mustafić), prva
+        knjiga na arebici sa ISBN kodom, koja ujedino predstavlja završetak standardizacije Čauševićeve arebice.</p>
+
+        <table cellpadding="0" cellspacing="0">
+            <caption><i>Čauševićeva Arebica</i></caption>
+            <tr class="thclass">
+                <th>Latinica</th>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+                <th>Č</th>
+                <th>Ć</th>
+                <th>D</th>
+                <th>DŽ</th>
+                <th>Đ</th>
+                <th>E</th>
+                <th>F</th>
+                <th>G</th>
+                <th>H</th>
+                <th>I</th>
+                <th>J</th>
+                <th>K</th>
+            </tr>
+            <tr>
+                <td>Arebica</td>
+                <td>آ</td>
+                <td>ب</td>
+                <td>ڄ</td>
+                <td>چ</td>
+                <td>ڃ</td>
+                <td>د</td>
+                <td>ج</td>
+                <td>ݗ</td>
+                <td>ە</td>
+                <td>ف</td>
+                <td>غ</td>
+                <td>ح</td>
+                <td>ي</td>
+                <td>ې</td>
+                <td>ق</td>
+            </tr>
+
+            <tr class="thclass">
+                <th>Latinica</th>
+                <th>L</th>
+                <th>LJ</th>
+                <th>M</th>
+                <th>N</th>
+                <th>NJ</th>
+                <th>O</th>
+                <th>P</th>
+                <th>R</th>
+                <th>S</th>
+                <th>Š</th>
+                <th>T</th>
+                <th>U</th>
+                <th>V</th>
+                <th>Z</th>
+                <th>Ž</th>
+            </tr>
+
+            <tr>
+                <td>Arebica</td>
+                <td>ل</td>
+                <td>ڵ</td>
+                <td>م</td>
+                <td>ن</td>
+                <td>ݩ</td>
+                <td>ۉ</td>
+                <td>پ</td>
+                <td>ر</td>
+                <td>س</td>
+                <td>ش</td>
+                <td>ت</td>
+                <td>ۆ</td>
+                <td>و</td>
+                <td>ز</td>
+                <td>ژ</td>
+            </tr>
+        </table>
+    </div>
+    &copy; Armin Rejzović, 2020.
+</div>
+
+</body>
+
+<script>
+    var targetLanguage = "Arebica";
+    var title1 = document.getElementById("title1");
+    var title2 = document.getElementById("title2");
+
+    var language1 = document.getElementById("firstlangText");
+    var language2 = document.getElementById("secondlangText");
+
+    document.getElementById("firstlangText").onkeydown = function (ev){
+
+        console.log(ev.which);
+
+        if (targetLanguage === "Arebica"){
+            language2.textContent = toArabic(language1.value + String.fromCharCode(ev.which));
+        }
+        else {
+            language2.textContent = toLatin(language1.value + String.fromCharCode(ev.which));
+        }
+    }
+
+    function switchLanguages(){
+        var temp = title1.textContent;
+        title1.textContent = title2.textContent;
+        title2.textContent = temp;
+        targetLanguage = title2.textContent;
+
+        var t = language1.value;
+        language1.textContent = language2.value;
+        language2.textContent = t;
+
+        document.title = title1.textContent + "<->" + title2.textContent;
+    }
+
+    function clearAll() {
+        language1.value = "";
+        language2.textContent = "";
+    }
+
+    function copyToClipboard(){
+        navigator.clipboard.writeText(language2.textContent);
+    }
+
+    function fontUp(){
+        let style = window.getComputedStyle(language2, null).getPropertyValue('font-size');
+        let currentSize = parseFloat(style);
+        language2.style.fontSize = (currentSize + 2) + 'px';
+    }
+
+    function fontDown(){
+        let style = window.getComputedStyle(language2, null).getPropertyValue('font-size');
+        let currentSize = parseFloat(style);
+        language2.style.fontSize = (currentSize - 2) + 'px';
+    }
+
+    function toArabic(s){
+        var arabicString="";
+        if (s.charCodeAt(s.length-1)===8){
+            console.log("BACKSPACE");
+            s = s.substr(0,s.length-2);
+        }
+
+        for(let i=0; i<s.length; i++){
+            switch (s.charAt(i).toUpperCase()){
+                case 'A':{
+                    arabicString += 'آ';
+                    break;
+                }
+                case 'B':{
+                    arabicString += 'ب';
+                    break;
+                }
+                case 'C':{
+                    arabicString += 'ڄ';
+                    break;
+                }
+                case 'Č':{
+                    arabicString += 'چ';
+                    break;
+                }
+                case 'Ć':{
+                    arabicString += 'ڃ';
+                    break;
+                }
+                case 'D':{
+                    arabicString += 'د';
+                    break;
+                }
+                case 'Đ':{
+                    arabicString += 'ݗ';
+                    break;
+                }
+                case 'E':{
+                    arabicString += 'ە';
+                    break;
+                }
+                case 'F':{
+                    arabicString += 'ف';
+                    break;
+                }
+                case 'G':{
+                    arabicString += 'غ';
+                    break;
+                }
+                case 'H':{
+                    arabicString += 'ح';
+                    break;
+                }
+                case 'I':{
+                    arabicString += 'ي';
+                    break;
+                }
+                case 'J':{
+                    if (s.charAt(i-1).toUpperCase()==='L'){
+                        arabicString = arabicString.substr(0,arabicString.length-1);
+                        console.log("SUCCESS");
+                        arabicString += 'ڵ';
+                        break;
+                    }
+                    else if (s.charAt(i-1).toUpperCase()==='N'){
+                        arabicString = arabicString.substr(0,arabicString.length-1);
+                        console.log("SUCCESS");
+                        arabicString += 'ںٛ';
+                        break;
+                    }
+                    else arabicString += 'ې';
+                    break;
+
+                }
+                case 'K':{
+                    arabicString += 'ق';
+                    break;
+                }
+                case 'L':{
+                    arabicString += 'ل';
+                    break;
+                }
+                case 'M':{
+                    arabicString += 'م';
+                    break;
+                }
+                case 'N':{
+                    arabicString += 'ن';
+                    break;
+                }
+                case 'O':{
+                    arabicString += 'ۉ';
+                    break;
+                }
+                case 'P':{
+                    arabicString += 'پ';
+                    break;
+                }
+                case 'R':{
+                    arabicString += 'ر';
+                    break;
+                }
+                case 'S':{
+                    arabicString += 'س';
+                    break;
+                }
+                case 'Š':{
+                    arabicString += 'ش';
+                    break;
+                }
+                case 'T':{
+                    arabicString += 'ت';
+                    break;
+                }
+                case 'U':{
+                    arabicString += 'ۆ';
+                    break;
+                }
+                case 'V':{
+                    arabicString += 'و';
+                    break;
+                }
+                case 'Z':{
+                    arabicString += 'ز';
+                    break;
+                }
+                case 'Ž':{
+                    if (s.charAt(i-1).toUpperCase()==='D'){
+                        arabicString = arabicString.substr(0,arabicString.length-1);
+                        console.log("SUCCESS");
+                        arabicString += 'ج';
+                        break;
+                    }
+                    arabicString += 'ژ';
+                    break;
+                }
+
+            }
+            if (!isNaN(s.charAt(i)) || s.charAt(i)==='.' || s.charAt(i)===',' || s.charAt(i)==='!'|| s.charAt(i)==='?'
+                || s.charAt(i)==='-'|| s.charAt(i)==='"'|| s.charAt(i)==='('|| s.charAt(i)===')'|| s.charAt(i)==='=')
+                arabicString+=s.charAt(i);
+        }
+        console.log(arabicString);
+        return arabicString;
+    }
+
+    function toLatin(s){
+        var newString="";
+
+        if (s.charCodeAt(s.length-1)===8){
+            s = s.substr(0,s.length-2);
+            console.log("NEW STRING: " + s);
+        }
+
+        for(let i=0; i<s.length; i++){
+            switch (s.charAt(i)){
+                case "ا":{
+                    newString += 'A';
+                    break;
+                }
+                case 'آ':{
+                    newString += 'A';
+                    break;
+                }
+                case 'ب':{
+                    newString += 'B';
+                    break;
+                }
+                case 'ڄ':{
+                    newString += 'C';
+                    break;
+                }
+                case 'چ':{
+                    newString += 'Č';
+                    break;
+                }
+                case 'ڃ':{
+                    newString += 'Ć';
+                    break;
+                }
+                case 'د':{
+                    newString += 'D';
+                    break;
+                }
+                case 'ݗ':{
+                    newString += 'Đ';
+                    break;
+                }
+                case 'ج':{
+                    newString += 'Dž';
+                    break;
+                }
+                case 'ە':{
+                    newString += 'E';
+                    break;
+                }
+                case 'ف':{
+                    newString += 'F';
+                    break;
+                }
+                case 'غ':{
+                    newString += 'G';
+                    break;
+                }
+                case 'ح':{
+                    newString += 'H';
+                    break;
+                }
+                case 'ي':{
+                    newString += 'I';
+                    break;
+                }
+                case 'ې':{
+                    newString += 'J';
+                    break;
+                }
+                case 'ق':{
+                    newString += 'K';
+                    break;
+                }
+                case 'ل':{
+                    newString += 'L';
+                    break;
+                }
+                case 'ڵ':{
+                    newString += 'Lj';
+                    break;
+                }
+                case 'م':{
+                    newString += 'M';
+                    break;
+                }
+                case 'ن':{
+                    newString += 'N';
+                    break;
+                }
+                case 'ںٛ':{
+                    newString += 'Nj';
+                    break;
+                }
+                case 'ۉ':{
+                    newString += 'O';
+                    break;
+                }
+                case 'پ':{
+                    newString += 'P';
+                    break;
+                }
+                case 'ر':{
+                    newString += 'R';
+                    break;
+                }
+                case 'س':{
+                    newString += 'S';
+                    break;
+                }
+                case 'ش':{
+                    newString += 'Š';
+                    break;
+                }
+                case 'ت':{
+                    newString += 'T';
+                    break;
+                }
+                case 'ۆ':{
+                    newString += 'U';
+                    break;
+                }
+                case 'و':{
+                    newString += 'V';
+                    break;
+                }
+                case 'ز':{
+                    newString += 'Z';
+                    break;
+                }
+                case 'ژ':{
+                    newString += 'ژ';
+                    break;
+                }
+            }
+            if (!isNaN(s.charAt(i)) || s.charAt(i)==='.' || s.charAt(i)===',' || s.charAt(i)==='!'|| s.charAt(i)==='?'
+                || s.charAt(i)==='-'|| s.charAt(i)==='"'|| s.charAt(i)==='('|| s.charAt(i)===')'|| s.charAt(i)==='=')
+                newString+=s.charAt(i);
+        }
+        console.log(newString);
+        return newString;
+    }
+</script>
+
+
+</html>

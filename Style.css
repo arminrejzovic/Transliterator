@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+img[alt="switch"]:hover{
+    content: url("pics/switchhover.png");
+}
+
+img[alt="clear"]:hover{
+    content: url("pics/clearhover.png");
+}
+
+img[alt="clipboard"]:hover{
+    content: url("pics/clipboardhover.png");
+}
+
+img[alt="fontup"]:hover{
+    content: url("pics/fontuphover.png");
+}
+
+img[alt="fontdown"]:hover{
+    content: url("pics/fontdownhover.png");
+}
+
+
+h3{
+    font-size: 26px;
+    padding: 5px;
+    margin-bottom: 8px;
+}
+
+
+#firstlangText, #secondlangText{
+    width: 100%;
+    height: fit-content;
+    min-height: 200px;
+
+    font-size: 16px;
+    padding: 10px;
+    border: #2ECC71 2px solid; !important;
+}
+
+#firstlangText{
+    background-color: rgba(255,255,255,0);
+}
+
+#secondlangText{
+    word-wrap: break-word;
+    font-size: 24px;
+    font-family: "Droid Arabic Naskh", sans-serif;
+}
+
+#container{
+    width: 66%;
+    margin: auto;
+    background-color: aliceblue;
+    padding: 20px;
+}
+
+img{
+    height: 32px;
+    vertical-align: middle;
+}
+
+#aboutIMG{
+    height: 40px;
+}
+
+header{
+    width: 66%;
+    background-color: rgb(46,204,113); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+    height: 150px;
+}
+
+
+#buttons, #fontButtons{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#about{
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+#about span{
+    color: #2ECC71;
+}
+
+#aboutTitle{
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+#about a{
+    color: #2ECC71;
+    text-decoration: none;
+}
+
+#about a:hover{
+    text-decoration: underline;
+}
+
+#about p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+table{
+    border: none;
+    caption-side: bottom;
+    margin: 30px auto auto;
+    max-width: 100%;
+}
+
+table caption{
+    margin-top: 10px;
+}
+
+td, th{
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.thclass{
+    background-color: #2ECC71;
+}
