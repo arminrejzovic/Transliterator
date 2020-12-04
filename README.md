@@ -1,2 +1,1 @@
-# Transliterator
-Transliterator Latinica - Arebica
+permalink: /index.html
